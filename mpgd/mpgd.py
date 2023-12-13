@@ -1,7 +1,7 @@
 import torch
 
 class mpgd():
-    def __init__(self, threshold=0.005, toploss):
+    def __init__(self, threshold=0.005, toploss=torch.nn.MSELoss()):
         self.threshold = threshold #threshold in mpgd
         self.loss = toploss #loss functions in pytorch
 
